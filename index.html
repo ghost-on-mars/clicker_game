@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clicker Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="text1">
+    <h1>Stardust Clicker Game</h1>
+    </div>
+    <div class="starbutton"> <!--these are the three different star buttons-->
+    <img id="star1" src = https://i.ibb.co/6Bn3pgQ/Untitled597-20240613085209.png  alt ="four pointed yellow star" width = 120   onclick="add(); "> <!--thisclick=null makes it only go once, but that applies to both so bad-->
+    <img id="star2" src = https://i.ibb.co/BN9NJmF/kisspng-gif-stock-photography-image-animation-gfycat-5d2faf0600f615-983300501563406086004.png alt ="five pointed yellow star" style="display: none;" width = 120 onclick="add()">
+    <img id="star3" src = https://i.ibb.co/D9w7Chy/Untitled597-20240619171930.png alt ="six pointed yellow star" style="display: none;" width = 120 onclick="add()">
+
+    <div class="fakestars"> <!--these are to replace the other stars after time is up, but since they dont have anything for onclick they do nothing and its like the button is disabled (i couldnt figure out how to turn it off so i did this instead)-->
+    <img id="uselessstar" src = https://i.ibb.co/6Bn3pgQ/Untitled597-20240613085209.png alt ="four pointed yellow star" width = 120 style="display: none;">
+    <img id="uselessstar2" src = https://i.ibb.co/BN9NJmF/kisspng-gif-stock-photography-image-animation-gfycat-5d2faf0600f615-983300501563406086004.png alt ="five pointed yellow star" width = 120 style="display: none;">
+    <img id="uselessstar3" src = https://i.ibb.co/D9w7Chy/Untitled597-20240619171930.png alt ="six pointed yellow star" width = 120 style="display: none;">
+    </div>
+    </div>
+
+    <div class="clicktext"> <!--displays the number of clicks-->
+    <p id="clickcount">Clicks: 0</p>
+    </div>
+
+    <div class="leveltext"><!--displays the level. the leveltext2 is for switching to white text-->
+    <p id="leveltext" style="display: block;"> <span style="color: black"> Level: </span> <span id="level" >1 </span> </p> 
+    <p id="leveltext2" style="display: none;"> <span style="color: white"> Level: </span> <span id="level2" >1 </span> </p> 
+    </div>
+
+    <div class="writeHere"> <!--this will only show once you reach 100 or 200 clicks and will say that-->
+        <p id="writeHere" style="display: none;"> HEREEEEEEEEEEEEEEEEEEEEEEEEEEEE </style>
+
+    </div>
+
+    <div class="writeHeretwo"><!--this will only show after level 5 and says keep going-->
+        <p id="writeHeretwo" style="display: none;"> </style>
+
+    </div>
+
+    <div class="timer"><!--this is what the time remaining is displaye on-->
+        <p id="timer">Click as much as you can in 30 seconds.</p>
+    </div>
+
+    <div class="scoretext"> <!--this will display the final score-->
+        <p id="scoretext" style="display: none;"> </style>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+h1 {/*setting size and margin*/
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.dancing-script-ds {/*importing the custom fonts from google (i didnt end up using this one*/
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.geostar-fill-regular { /*other font*/
+    font-family: "Geostar Fill", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.stardos-stencil-regular { /*third font*/
+    font-family: "Stardos Stencil", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.stardos-stencil-bold {/*variation of that one*/
+    font-family: "Stardos Stencil", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.writeHere {
+    transform-origin: 0 0;
+    font-size: 18px;/*sets the font size*/
+    transform: rotate(10deg);/*sets the angle*/
+    color: yellow;/*colour*/
+    position: fixed;
+    right: 1035px; /*sets the positon on the screen*/      /*old way aligned for the preview screen not a full website (just keeping this for myself) 470px;*/
+    top: 130px;
+    
+}
+
+.writeHeretwo { /*all of this is set up smae as before just a different angle and position*/
+    transform-origin: 0 0;
+    font-size: 18px;
+    transform: rotate(-14deg);
+    color: yellow;
+    position: fixed;
+    right: 765px;
+    top: 270px;
+    
+}
+
+.scoretext { /*the final score*/
+
+    /*ths is for if i want it centered*/
+    margin-left: auto;/*just aligning it*/
+    margin-right: auto;
+    text-align: center;
+    font-size: 23px;
+    color: yellow;
+
+    /*i cant decide if i should have it centered or in the corner so below is just so i dont have to retype it if i change my mind*/
+    /*text-align: left;
+    transform-origin: 0 0;
+    font-size: 23px;
+    color: yellow;
+    position: fixed;
+    left: 10px;
+    top: 7px;*/
+    
+}
+    
+body { 
+    font-family: "Stardos Stencil", cursive;/*sets the font*/
+    background-color: #d5d4f9; /*sets the bg colour*/
+    text-align: center;/*centers text*/
+}
+
+.starbutton {/*just positioning it*/
+    padding: 10px 20px;
+    margin-top: 60px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.clicktext {/*just setting size*/
+    font-size: 18px;
+}
+
+.timer {/*just setting size*/
+    font-size: 18px;
+}
+
+.leveltext {
+    font-size: 25px;
+    color: yellow;/*this is yellow so that just the number that changes is yellow*/
+}
+
+
+
